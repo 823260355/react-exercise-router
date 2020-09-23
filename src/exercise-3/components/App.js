@@ -15,9 +15,10 @@ class App extends Component {
         <BrowserRouter>
         <Header /> 
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route  path="/" component={Home} />
             <Route exact path='/products' component={Products} />
-            <Route exact path='/products/:id' component={Product} />
+            <Route path='/goods' component={Products}/>
+            <Route exact path='/products/:id' component={Product} />     
             <Route exact path="/my-profile" component={MyProfile} />
             <Route exact path="/about-us" component={AboutUs} />
           </Switch>
